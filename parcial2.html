@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="Logo">
+                <h1>Parcial 2</h1>
+                <img src="Imagenes/hollowstar.png" height="200px" alt="">
+            </div>
+        </header>
+        <nav>
+            <a href="parcial1.html">Parcial 1</a>
+            <a href="parcial2.html">Parcial 2</a>
+        </nav>
+        <section>
+            <div class="Titulo1">
+                <h2>Position</h2>
+                    <div class="Texto1">
+                        <p>La propiedad “position” sirve para posicionar distintos elementos en el HTM, esto a traves de CSS. La propiedad tiene cuatro formas de declararse, siendo estas “Static”, “Relative”, “Absolute” y “Sticky”. </p>
+                        <p>El “position: static;” viene de manera definida en los elementos, pues es parte del flujo normal de la página, el cual es descendente. En caso de usar un “float: left”, los elementos irán en la dirección izquierda de la página (Derecha para nosotros). </p>
+                        <p>El “position: absolute;” se emplea para establecer de forma exacta la posición de un elemento dentro de un contenedor que este establecido como “static”. </p>
+                        <p>Un elemento “sticky” se mantiene en el mismo lugar aun si la página se desplaza. Sirve con cosas como barras de navegación y menús, aunque es más visto en los famosos pop-ups. </p>
+                    </div>
+            </div>
+            <div class="Titulo2">
+                <h2>Apuntes Position</h2>
+                    <div class="Texto2">
+                        <p>El “position: static” no se ve afectado por las declaraciones “top”, “bottom”, “left” y “right”, es necesario cambiar a “position: relative;” para que se ejecuten. </p>
+                    </div>
+                    <div class="Imagen">
+                        <img src="Imagenes/poaition.jpeg" width="550px" alt="position">
+                    </div>
+            </div>
+            <div class="Titulo1">
+                <h2>Animaciones</h2>
+                    <div class="Texto1">
+                        <p>CSS permite animar la mayoría de los elementos sin usar JavaScript. Cuando especifica estilos CSS de la regla “keyframes”, la animación cambiara del estilo actual al estilo nuevo. </p>
+                        <p>“Animation-delay” Sirve para retrasar la animación. 
+                        “Animation-iteration-count"  Sirve para ver cuantas veces se repetirá la animación.
+                        “Animation-direction" Sirve para que la imagen se mueva a una dirección (Normal, Alternate, Reverse, Alternate Reveser).
+                        “Animation-play-state" Sirve para pausar la animación. </p>
+                        <p>“Animation” Propiedad rápida para configurar todas las propiedades de la animación. “Tiempo”, “Delay”, “Interation-Count” es el orden de las declaraciones. </p>
+                    </div>
+            </div>
+            <div class="Titulo2">
+                <h2>Apuntes Animaciones</h2>
+                    <div class="Texto2">
+                        <p>Se debe especificar cuanto tiempo debe transcurrir una animación para completar un ciclo, “animation-duration” y “animation-name” son dos etiquetas obligatorias. El valor determinado de la animacion es 0, lo que hace que no se ejecute. </p>
+                        <p>Un documento de CSS puede tener varias animaciones ahí guardadas, por eso debemos ponerles nombres. Para que estas funcionen se deben vincular la animación a un elemento. </p>
+                    </div>
+                    <div class="Imagen">
+                        <img src="Imagenes/animation.PNG" height="250px" width="550px" alt="animation">
+                    </div>
+            </div>
+            <div class="Titulo1">
+                <h2>Selectores</h2>
+                    <div class="Texto1">
+                        <p>Atributo ID es como un nombre que identifica el elemento. El valor de este atributo no puede ser duplicado. Este nombre debe ser único en todo el documento. </p>
+                        <p>Atributo Class es mas flexible y puede ser asignado a varios elementos html en el documento que comparten un diseño similar. </p>
+                        <p>“first-child” referencia solo al primer hijo, no necesita palabras claves o parámetros. “last-child” solo referencia al último hijo.  “only-child” solo afecta cuando hay un único hijo. “not()” nos permite declarar una excepción, los estilos de la regla creada con esta pseudoclase serán asignados a todo elemento excepto aquellos incluidos en la referencia entre paréntesis. En lugar de la palabra clave de un elemento, podemos usar cualquier otra referencia. </p>
+                        <p>Selector de atributo selecciona elementos html en función de sus atributos o el valor de uno de sus atributos. Esto permite aplicar estilos a los elementos que posean otros atributos. “^=” selecciona los elementos que empiezan ciertos valores “$” selecciona atributos que terminen con ciertos valores, “*=”, selecciona elementos cuyo atributo contiene una cadena de valores en cualquier posición </p>
+                        <p>Los Selectores de relación en CSS permiten seleccionar elementos basados en su relación con otros elementos dentro del document, Estos selectores son útiles para aplicar estilos a elementos que tienen un vínculo estructural con otros elementos, como ancestros, padres, hermanos, o descendientes. </p>
+                        <p>Selector de hijos directos (>) selecciona los elementos que son hijos inmediatos de un elemento padre. </p>
+                        <p>El selector de hermanos adyacentes (+) selecciona un elemento que es un hermano inmediato, es decir, que está justo después del otro elemento </p>
+                        <p>El selector de hermanos generales (~) selecciona los elementos que son hermanos de un elemento anterior, es decir, sin importar si son inmediatos o no. </p>
+                    </div>
+            </div>
+            <div class="Titulo2">
+                <h2>Apuntes Selectores</h2>
+                    <div class="Texto2">
+                        <p>Fieldset es un selector de elementos. </p>
+                        <p>Si se utilizan las palabras “odd” y “even” en los paréntesis del child se utilizan para seleccionar elemento con base en su posición en la secuencia de hijos, específicamente para alternar entre pares e impares. Odd actúa como impar y even como par. </p>
+                        <p>Un selector de elementos en CSS es una regla que selección todos los elementos de un tipo especifico en el html. Es el selector más básico. </p>
+                        <p>La pseudo clase nth-child() nos permite encontrar un hijo especifico. En un div contenedor con varios parrafos, si se busca hacer referencia a uno de estos en especifico sin querer usar un id o un class, haciendo referencia al div contenedor, usar un selector del parrafo o elemento y entre los parentesis poner el numero del elemento. </p>
+                    </div>
+                    <div class="Imagen">
+                        <img src="Imagenes/CSS-selectores.jpg" width="575px" alt="selectores">
+                    </div>
+            </div>
+            <div class="Titulo1">
+                <h2>Nuevas Propiedades CSS</h2>
+                    <div class="Texto1">
+                        <p>Es un intento de reducir el uso de código JavaScript y para estandarizar funciones populares, css3 no solo cubre diseño y estilos web, sino también forma y movimiento. </p>
+                        <p>“Border Radius” es una propiedad que genera esquinas redondeadas para la caja por el elemento. Posee dos parámetros diferentes que dan forma a la esquina. Si bien puede dársele forma de circulo, seguirá siendo un cuadro. </p>
+                        <p>Con “boxshadow” puedo modificar tres valores del elemento, desplazamiento vertical, desplazamiento horizontal, iluminación y color a la sombra. “Text shadow” es para agregarle sombras a los textos, pero comúnmente no se usa. Solo se recomienda a títulos o textos de gran tamaño. </p>
+                        <p>Con font face” podemos cargar y usar cualquier fuente que necesitamnos. Primero, debemos eclarar la fuentem oriveer un nombre con la propiedad fontfamily y especificar el archico con src. Luego de esto, podremos asignar  </p>
+                        <p>El “linear gradient” puede ser aplicado a las propiedades background-image para generar un gradiente linear. Es conveniente agregar un color de fondo solido por si acaso el navegador del usuario no soporta los degradados (IE9 y versiones anteriores). “Radial-Gradient” es lo mismo pero en circulo. Se utilizan las palabras claves bottom, top, left y right pero solo funcionan en prefijo de vendedor. </p>
+                        <p>Esta propiedad fue mejorada con la incorpocracion de otra propiedad llamada outline-offset. Ambas propiedades combinadas generan un segundo borde alejado del borde original del elemento. </p>
+                    </div>
+            </div>
+            <div class="Titulo2">
+                <h2>Apuntes Nuevas Propiedades CSS</h2>
+                    <div class="Texto2">
+                        <p>Si se escriben 4 elementos en el border radius, cada una determinara una esquina del elemento. Si uso una diagonal, puedo dividir una misma esquina para crear distintas curvas </p>
+                        <p>Con las imágenes, dependiendo de cómo se acomode, se pueden crear estéticas chidas con "overflow:hidden".</p>
+                    </div>
+                    <div class="Imagen">
+                        <img src="Imagenes/css-logo.png" alt="css">
+                    </div>
+            </div>
+        </section>
+        <footer>
+            <div class="Titulo3">
+                <h2>Bitacora de Joel Sierra</h2>
+                    <div class="Texto3">
+                        <p>Contacto: al238036@alumnos.uacj.mx</p>
+                    </div>
+            </div>
+        </footer>    
+        </main>
+</body>
+</html>
