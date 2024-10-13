@@ -44,10 +44,9 @@ section {
     background-attachment: fixed;
 }
 .Titulo1 {
-    height: 450px;
+    height: 460px;
     width: 1255px;
     background-color: rgba(4, 2, 83, 0.417);
-    float: left;
     padding-left: 20px;
 }
 .Texto1 {
@@ -56,9 +55,7 @@ section {
     background-color: #3051608b;
     padding: 16px;
     border: 1px solid; color: black;
-    margin-top: 20px;
     float: left;
-
 }
 footer{
     width: 1366px;
