@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="Logo">
+                <h1>Parcial 1</h1>
+                <img src="Imagenes/hollowstar.png" height="200px" alt="">
+            </div>
+        </header>
+        <nav>
+            <a href="parcial1.html">Parcial 1</a>
+            <a href="parcial2.html">Parcial 2</a>
+            <a href="parcial3.html">Parcial 3</a>
+        </nav>
+        <section>
+            <fieldset>
+                <div class="Titulo1">
+                    <h2>Header</h2>
+                    <div class="Texto1">
+                        <p>El header es una de las partes más importantes de una página al ser lo primero que ve el usuario</p>
+                        <p>Lo primero que tenemos que hacer al diseñar un header es hacer una lista con los elementos que se le añadirán, ya sea por motivos de branding, navegación u otros</p>
+                        <p>Los elementos que pueden formar parte del header van a depender de los objetivos del sitio web</p>
+                        <p>En una web no puede faltar el logotipo, sirve para enlazar con el index, y reforzar la imagen de la marca</p>
+                        <p>Se puede colocar un menú o dos, siempre en función del proyecto y de su estructura</p>
+                        <p>El buscador es por cuestiones de usabilidad, un usuario que entra por primera vez desconoce el contenido del sitio y usará esta herramienta</p>
+                        <p>Si la web es una tienda online, se debe incluir en el header los elementos referentes al proceso de compra</p>
+                    </div>
+                </div>
+                <div class="Titulo2">
+                    <h2>Apuntes Header</h2>
+                    <div class="Texto2">
+                        <p>Es un espacio genérico que tendrá el mismo diseño en todas las páginas de un sitio web</p>
+                        <p>Logotipo, menu, buscador, datos de contacto, redes sociales, carrito de compra, etc...</p>
+                        <p>Un buscador debe usar la base de datos de la página web y que este no mande al usuario a la página de google. El buscador debe estar dentro de la página. </p>
+                    </div>
+                    <div class="Imagen">
+                        <img src="Imagenes/header.PNG" width="550px" alt="">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="Titulo1">
+                    <h2>Especificidad</h2>
+                    <div class="Texto1">
+                        <p>Es el medio por el cual los navegadores deciden que valores de la propiedad css son los mas relevantes para un elemento y por lo tanto se aplicaran </p>
+                        <p>Solo se aplica cuando el mismo elemento es el objetivo de varias declaraciones</p>
+                        <p>Cuando varias declaraciones tienen la misma especificidad, la última declaración encontrada en css se aplica al elemento </p>
+                        <p>Cada selector tiene su lugar en la jerarquía de especificidad. Hay cuatro categorías que definen el nivel de especificidad de un selector. </p>
+                        <p>Inline</p>
+                        <p>IDs</p>
+                        <p>Clases, Atributos y Pseudoclases</p>
+                        <p>"Important"</p>
+                    </div>
+                </div>
+                <div class="Titulo2">
+                    <h2>Apuntes Especificidad</h2>
+                    <div class="Texto2">
+                        <p>Según las reglas del css, los elementos dirigidos directamente siempre tendrán prioridad sobre las reglas que un elemento hereda de su antepasado.</p>
+                        <p>Los elementos style que se asignan en el html de manera directa </p>
+                        <p>Si el elemento html posee un id y se hace referencia a este en el CSS </p>
+                        <p>El !important es la excepcion a la regla </p>
+                        <p>Cuando se usa una regla !important en una declaracion, anula cualquier otra declaracion. </p>
+                    </div>
+                    <div class="Imagen">
+                        <img src="Imagenes/especificidad.png" width="500px" alt="">
+                    </div>
+                </div>
+            </fieldset> 
+            <fieldset>
+                <div class="Titulo1">
+                    <h2>After y Before</h2>
+                    <div class="Texto1">
+                        <p>Permiten insertar contenido en una página a web desde el css sin usar el html.</p>
+                        <p>Si bien el resultado final no está realmente en el documento aparece en la página como si lo estuviera. Se debe usar la propiedad de contenido “contente” para especificar el contenido que se insertara</p>
+                        <p>El selector :after es para insertar algo después del contenido de cada uno de los elementos seleccionados </p>
+                        <p>El selector :before inserta algo antes del contenido de cada uno de los elementos seleccionados </p>
+                    </div>
+                </div>
+                <div class="Titulo2">
+                    <h2>Apuntes After y Before</h2>
+                    <div class="Texto2">
+                        <p>El valor que puede tener content </p>
+                        <p>Una cadena de caracteres “content:”texto”;” los caracteres especiales deben estar especialmente codificados como una entidad unicode </p>
+                        <p>Imágenes “content:url (image.jpg);” estas no alteraran su tamaño </p>
+                        <p>Nada “content:””;” útil para insertar formas</p>
+                    </div>
+                    <div class="Imagen">
+                        <img src="Imagenes/before y after.png" width="500px" alt="">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="Titulo1">
+                    <h2>Table</h2>
+                    <div class="Texto1">
+                        <p>Las tablas nos permiten organizar los datos en filas y columnas, razón por la cual se usan en los formularios. </p>
+                        <p>Antes de la creación del CSS, los elementos table eran frecuentemente utilizados para la disposición de una página</p>
+                        <p>Una tabla es un conjunto estructurado de datos distribuidos en filas y columnas, permite buscar con rapidez valores y datos que indiquen algún tipo de conexión </p>
+                        <p>Rowspan es el alcance que tendra una celda </p>
+                    </div>
+                </div>
+                <div class="Titulo2">
+                    <h2>Apuntes Table</h2>
+                    <div class="Texto2">
+                        <p>“thead” Encabezado de la tabla </p>
+                        <p>“th” Celda del encabezado de la tabla </p>
+                        <p>“tbody” Cuerpo de la tabla </p>
+                        <p>“tr” Este es un renglon </p>
+                        <p>“tfoot” Footer de la tabla</p>
+                        <p>“td rowspan=3" sirve para que una celda ocupe tres renglones en vez de un</p>
+                    </div>
+                    <div class="Imagen">
+                        <img src="Imagenes/table.png" width="500px">
+                    </div>
+                </div>
+            </fieldset> 
+            <fieldset>
+                <div class="Titulo1">
+                    <h2>Colores</h2>
+                    <div class="Texto1">
+                        <p>RGB: Red, Green, Blue. Los colores estandar (Sintesis aditiva) Cada uno posee 256 valores, del 0 al 255. Hay un total de 16,777,216 de colores </p>
+                        <p>CMYK: Cyan, Magent, Yellow and Key (Sintesis sustractiva) </p>
+                        <p>El hexadecimal es un código de 6 caracteres seleccionados de los 16 dígitos del hexadecimal (0-F). Se empieza con un # 
+                            Los caracteres están divididos en tres grupos de dos, representando el RGB.  </p>
+                        <p>El RGBA posee el termino Alpha, el cual sirve para la transparencia, dando asi un código de 8 caracteres + el # </p>
+                        <p>HSL y HSLA, Hue (Matiz) Saturation (Saturacion) y Lightness (Brillo) </p>
+                        <p>Cuando se crea un sitio web, la elección de colores es una tarea delicada, a pesar de parecer fácil </p>
+                        <p>Los colores en un sitio web pueden ser una herramienta muy eficaz para lograr que los visitantes se sientan cómodos e interactúan con el sitio web, un usuario no es consciente de como los colores afectan a su perspectiva al entrar a un sitio web. Si el diseño y colores no le gustan al usuario, se saldrá. </p>
+                        <p>La primera de las pautas para elegir bien los colores es identificar al público objetivo del sitio web. Muchos están asociados a ciertos grupos de personas. Tiene que atraer y convencer a la visita. </p>
+                        <p>Los colores transmiten sensaciones y es necesario usar estas de manera correcta. Algunos colores generan sensaciones distintas dependiendo de la cultura del visitante. </p>
+                        <p>La armonia de colores y el equilibrio es necesario para un proyecto efectivo.</p>
+                    </div>
+                </div>
+                <div class="Titulo2">
+                    <h2>Apuntes Colores</h2>
+                    <div class="Texto2">
+                        <p>4 formas de representar colores: Keyword, Hexadecimal, RGB, HSL </p>
+                        <p>El hue es representado como un círculo, mientras que la saturacion y brillo en porcentaje. Los valores del Hue son desde 0º hasta el 360º </p>
+                        <p>También se debe dejar aire y espacios en blanco para que la mirada descanse, o en tonalidades más bajas del color principal. La paleta elegida deberá ser uniforme y usarse en todo el sitio web. Muchos colores cansan a la vista. </p>
+                        <p>Colores en la misma escala cromática, Colores complementarios o Colores opuestos </p>
+                    </div>
+                    <div class="Imagen">
+                        <img src="Imagenes/colores.png" width="500px">
+                    </div>
+                </div>
+                </div>
+            </fieldset> 
+            <fieldset>
+                <div class="Titulo1">
+                    <h2>Footer</h2>
+                    <div class="Texto1">
+                        <p>El footer o pie de página es una sección olvidada en muchos proyectos web, pero si es bien diseñado puede ser muy útil y efectivo</p>
+                        <p>Planificar cada uno de los elementos que se incluirán en el footer es parte del proceso de diseño de un proyecto web. Así se establecen los elementos que se van a mostrar en función de los objetivos y de la estrategia de marketing</p>
+                        <p>Los textos legales son elementos obligatorios en el footer de toda web y no hay lugar a interpretaciones. </p>
+                        <p>Los textos legales obligatorios so dos, la política de privacidad y el aviso legal. Hay otros complementarios como datos de contacto, la política de transparencia, etc. </p>
+                        <p>La política de cookies es también uno de los textos legales obligatorios en todo sitio web. Debe aparecer en forma de barra o mensaje. </p>
+                        <p>Las Redes sociales son otro de los elementos que es recomendable colocar en el footer, principalmente cuando se tienen varias. </p>
+                        <p>Otra información que es recomendable colocar es el Copyright, o sea, los créditos del diseñador, de los autores del material gráfico, instituciones que colaboran con el proyecto, etc. </p>
+                        <p>El Call to Action es una imagen o un texto que invita a los visitantes de una página web a realizar una acción. </p>
+                        <p>El sitemap son archivos en los que se proporciona información sobre las páginas, los videos y otros archivos del sitio</p>
+                        <p>Un formulario de suscripcion es un formulario ubicado en cualquier página de un sitio web o blog donde los usuarios pueden completar los campos con sus datos de correo electrónico. </p>
+                    </div>
+                </div>
+                <div class="Titulo2">
+                    <h2>Apuntes Footer</h2>
+                    <div class="Texto2">
+                        <p>Es un espacio genérico que suele tener el mismo diseño en todas las páginas de un sitio web</p>
+                        <p>La privacidad de los usuarios que visitan la web es un tema muy serio y además es obligatorio. Una web tiene dos alternativas: Tener avisos legales o ser infractor de la ley. </p>
+                        <p>Los sellos de confianza son importantes para sitios web de empresas. Estos sellos se venden</p>
+                        <p>Los buscadores como Google usan estos archivos para rastreas imágenes y sitios web</p>
+                    </div>
+                    <div class="Imagen">
+                        <img src="Imagenes/footer.PNG" width="500px">
+                    </div>
+                </div>
+                </div>
+            </fieldset>
+        </section>
+        <footer>
+            <div class="Titulo3">
+                <h2>Bitacora de Joel Sierra</h2>
+                <div class="Texto3">
+                    <p>Contacto: al238036@alumnos.uacj.mx</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
